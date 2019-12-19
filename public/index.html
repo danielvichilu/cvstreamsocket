@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Viewer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content="WebRTC Video Broadcast.">
+	<meta name="author" content="Brian Mau">
+	
+</head>
+<body>
+	<img id="image">
+	aaaaa
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+	const socket = io.connect(window.location.origin);
+	socket.on('data', (data) => {
+		const imageElm=document.getElementById('image');
+		imageElm.src=`data:image/jpeg;base64,${data}`
+		});
+	</script>
+</body>
+</html>
