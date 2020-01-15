@@ -19,6 +19,10 @@ io.sockets.on('connection', function (socket) {
     io.emit('data1', image)
   
  });
+    socket.on('image3',(image)=>{
+    io.emit('data3', image)
+  
+ });
 });
 server.listen(port, () => console.log(`http://localhost:${port}`+ '/mix.html',))
                           console.log(`http://localhost:${port}`+ '/index.html',);
