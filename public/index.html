@@ -11,7 +11,8 @@
 <body>
 	<img id="image">
 	<img id="image1">
-	aaaaa
+	<img id="image3">
+
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
@@ -23,6 +24,10 @@
 	socket.on('data1', (data1) => {
 		const imageElm1=document.getElementById('image1');
 		imageElm1.src=`data:image/jpeg;base64,${data1}`
+		});
+	socket.on('image3', (data3) => {
+		const imageElm3=document.getElementById('image3');
+		imageElm3.src=`data:image/jpeg;base64,${data3}`
 		});
 	</script>
 </body>
