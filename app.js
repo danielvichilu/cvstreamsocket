@@ -15,12 +15,12 @@ io.sockets.on('connection', function (socket) {
      io.emit('data', image)
    
   });
-  socket.on('image1',(image)=>{
-    io.emit('data1', image)
+  socket.on('image2',(image)=>{
+    io.emit('data2', image)
   
  });
-    socket.on('image3',(image)=>{
-    io.emit('data3', image)
+    socket.on('image22',(image)=>{
+    io.emit('data22', image)
   
  });
 });
