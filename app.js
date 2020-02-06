@@ -11,8 +11,8 @@ const io = require('socket.io')(server);
 app.use(express.static(__dirname + '/public'));
 io.sockets.on('error', e => console.log(e));
 io.sockets.on('connection', function (socket) {
-  socket.on('image',(image)=>{
-     io.emit('data', image)
+  socket.on('image11',(image)=>{
+     io.emit('data11', image)
    
   });
   socket.on('image21',(image)=>{
