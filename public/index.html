@@ -10,8 +10,8 @@
 </head>
 <body>
 	<img id="image">
-	<img id="image1">
-	<img id="image3">
+	<img id="image21">
+	<img id="image22">
 
 
 <script src="/socket.io/socket.io.js"></script>
@@ -21,13 +21,13 @@
 		const imageElm=document.getElementById('image');
 		imageElm.src=`data:image/jpeg;base64,${data}`
 		});
-	socket.on('data1', (data1) => {
-		const imageElm1=document.getElementById('image1');
-		imageElm1.src=`data:image/jpeg;base64,${data1}`
+	socket.on('data21', (data) => {
+		const imageElm21=document.getElementById('image21');
+		imageElm21.src=`data:image/jpeg;base64,${data}`
 		});
-	socket.on('data3', (data3) => {
-		const imageElm3=document.getElementById('image3');
-		imageElm3.src=`data:image/jpeg;base64,${data3}`
+	socket.on('data22', (data) => {
+		const imageElm22=document.getElementById('image22');
+		imageElm22.src=`data:image/jpeg;base64,${data}`
 		});
 	</script>
 </body>
