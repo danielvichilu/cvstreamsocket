@@ -15,8 +15,8 @@ io.sockets.on('connection', function (socket) {
      io.emit('data', image)
    
   });
-  socket.on('image2',(image)=>{
-    io.emit('data2', image)
+  socket.on('image21',(image)=>{
+    io.emit('data21', image)
   
  });
     socket.on('image22',(image)=>{
