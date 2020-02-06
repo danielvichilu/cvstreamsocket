@@ -9,7 +9,7 @@
 	
 </head>
 <body>
-	<img id="image">
+	<img id="image11">
 	<img id="image21">
 	<img id="image22">
 
@@ -17,8 +17,8 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
 	const socket = io.connect(window.location.origin);
-	socket.on('data', (data) => {
-		const imageElm=document.getElementById('image');
+	socket.on('image11', (data) => {
+		const imageElm=document.getElementById('image11');
 		imageElm.src=`data:image/jpeg;base64,${data}`
 		});
 	socket.on('data21', (data) => {
