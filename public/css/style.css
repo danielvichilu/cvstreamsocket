@@ -1,12 +1,12 @@
-    #2 {
-    width: 100%;
-    display:flex;
-    }
-     #image21,#image22{
-     width:20%;
-     }
-     #image11 {
-     width:40%;
-     }
-     
-    
+#pi1 {
+width: 50%;
+}
+#pi2 {
+	width: 50%;
+	display: flex;
+}
+
+img{
+	max-width:100%;
+	max-height:100%;
+}
