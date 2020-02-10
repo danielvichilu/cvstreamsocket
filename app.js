@@ -1,8 +1,6 @@
 const express = require('express');
 const app = express();
-let broadcaster;
 let server;
-let port;
   const http = require('http');
   server = http.createServer(app);
   port = process.env.PORT || 3000;
