@@ -1,5 +1,6 @@
 #pi1 {
 width: 50%;
+display: flex;
 }
 #pi2 {
 	width: 50%;
