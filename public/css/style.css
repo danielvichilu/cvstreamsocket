@@ -1,14 +1,12 @@
 #pi1front,#pi1back {
-width: 100%;
-display: flex;
+	width: 100%;
+	display: flex;
 }
 #pi2 {
 	width: 50%;
 	display: flex;
 }
-div {
-	width: 100%;
-}
+
 img{
 	max-width:50%;
 	max-height:50%;
