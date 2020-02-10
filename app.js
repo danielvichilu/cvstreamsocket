@@ -15,14 +15,17 @@ io.sockets.on('connection', function (socket) {
      io.emit('data11', image)
    
   });
-  socket.on('image21',(image)=>{
-    io.emit('data21', image)
+   socket.on('image12',(image)=>{
+     io.emit('data12', image)
+   
+  });
+  socket.on('image13',(image)=>{
+    io.emit('data13', image)
   
  });
-    socket.on('image22',(image)=>{
-    io.emit('data22', image)
+    socket.on('image14',(image)=>{
+    io.emit('data14', image)
   
  });
 });
-server.listen(port, () => console.log(`http://localhost:${port}`+ '/mix.html',))
-                          console.log(`http://localhost:${port}`+ '/index.html',);
+
