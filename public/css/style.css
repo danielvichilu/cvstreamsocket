@@ -1,11 +1,8 @@
-#pi1front,#pi1back {
+#pi1front,#pi1back,#pi2front,#pi2back {
 	width: 100%;
 	display: flex;
 }
-#pi2 {
-	width: 50%;
-	display: flex;
-}
+
 div {
 text-align: center;
 }
