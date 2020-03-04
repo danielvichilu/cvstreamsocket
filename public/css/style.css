@@ -3,10 +3,10 @@
 	display: flex;
 }
 
-div {
-text-align: center;
+div{
+	width: 100%;
 }
 img{
-	width:100%;
-	height:auto;
+	max-width:50%;
+	max-height:50%;
 }
