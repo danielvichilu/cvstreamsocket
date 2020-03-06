@@ -8,7 +8,7 @@ display: flex;
 .inside,.outside {
 position: absolute;
   left: 50%;
-	top:4px;
+	top:16px;
   transform: translate(-50%, -50%);
 }
 img{
