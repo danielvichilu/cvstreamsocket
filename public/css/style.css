@@ -2,11 +2,7 @@
 body {
 	background-color: blue;
 	}
-.front {
-	position: absolute;
-	left: 16%;
-	transform: translate(-16%, -16%);
-	}
+
 #front,#back  {
 	width: 100%;
 	display: flex;
