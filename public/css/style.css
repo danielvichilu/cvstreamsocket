@@ -1,20 +1,21 @@
 
-#pi1front,#pi1back,#pi2front,#pi2back  {
-width: 100%;
-display: flex;
-	position: relative;
-  text-align: center;
-  color: white;
-}
-.front {
-position: absolute;
-  left: 25%;
-  transform: translate(-25%, -25%);
-}
-img{
-	width: 50%;
-	height: auto;
-}
 body {
 	background-color: blue;
+	}
+.front {
+	position: absolute;
+	left: 25%;
+	transform: translate(-25%, -25%);
+	}
+#front,#back  {
+	width: 100%;
+	display: flex;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+img{
+	width: 33.3%;
+	height: auto;
 }
