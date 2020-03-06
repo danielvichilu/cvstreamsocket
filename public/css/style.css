@@ -3,7 +3,7 @@ body {
 	background-color: blue;
 	}
 
-#front,#back  {
+#outSide,#inSide  {
 	width: 100%;
 	display: flex;
 	position: relative;
