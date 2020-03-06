@@ -2,11 +2,12 @@
 #pi1front,#pi1back,#pi2front,#pi2back  {
 width: 100%;
 display: flex
-position: absolute;
-  bottom: 8px;
-  left: 16px;	
 }
-
+.front {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
 img{
 	width: 50%;
 	height: auto;
