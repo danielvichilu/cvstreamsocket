@@ -1,17 +1,19 @@
-
+#inSide,#outSide  {
+width: 100%;
+display: flex;
+	position: relative;
+  text-align: center;
+  color: white;
+}
+.inside,.outside {
+position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+img{
+	width: 50%;
+	height: auto;
+}
 body {
 	background-color: blue;
-	}
-
-#outSide,#inSide  {
-	width: 100%;
-	display: flex;
-	position: relative;
-	text-align: center;
-	color: white;
-}
-
-img{
-	width: 33.3%;
-	height: auto;
 }
