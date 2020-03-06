@@ -4,8 +4,8 @@ body {
 	}
 .front {
 	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	left: 16%;
+	transform: translate(-16%, -16%);
 	}
 #front,#back  {
 	width: 100%;
