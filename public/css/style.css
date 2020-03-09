@@ -36,7 +36,7 @@ position: absolute;
 		 2px  2px 0   #000000;
   transform: translate(-50%, -50%);
 }
-.milde{
+.milde,.right,.left{
 	width: 33.3%;
 	height: auto;
 }
