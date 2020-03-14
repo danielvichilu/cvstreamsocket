@@ -34,7 +34,7 @@ io.sockets.on('connection', function (socket) {
     socket.on('image22',(image)=>{
     io.emit('data22', image)
 });
-socket.on('error',(data)=>{
+socket.on('error1',(data)=>{
   io.emit('errorr', data)
 });
 })
