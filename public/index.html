@@ -49,8 +49,8 @@
 		const imageElm22=document.getElementById('image22');
 		imageElm22.src=`data:image/jpeg;base64,${data}`
 		});
-	socket.on('error', (data) => {
-		location.reload();
+	socket.on('errorr', (data) => {
+		console.log('errorr');
 	});
 	</script>
 </body>
