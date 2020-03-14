@@ -34,8 +34,9 @@ io.sockets.on('connection', function (socket) {
     socket.on('image22',(image)=>{
     io.emit('data22', image)
 });
-  socket.on('error',(data)=>{
-    io.emit('error', 'error')
- });
+socket.on('error',(data)=>{
+  io.emit('error', 'error')
+});
+})
 server.listen(port, () => console.log(`http://localhost:${port}`+ '/mix.html',))
                           console.log(`http://localhost:${port}`+ '/index.html',);
