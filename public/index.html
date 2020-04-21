@@ -11,9 +11,9 @@
 	
   <div class="outSide">
   	<div class="outsides"><h3 style="font-size:2vw;"> OutSide</h3> </div>
-	<div class ="rml"> <v-img id="image11"> </div>
-	<div class ="rml"> <v-img id="image21"> </div>
-	<div class ="rml"> <v-img id="image12"> </div>
+	<div class ="rml"> <img id="image11"> </div>
+	<div class ="rml"> <img id="image21"> </div>
+	<div class ="rml"> <img id="image12"> </div>
 </div>
 <div class="inSide">
 	<div class="insides"><h3 style="font-size:2vw;"> InSide</h3> </div>
@@ -23,7 +23,7 @@
 </div>
 
 <script src="/socket.io/socket.io.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	
 <script>
 	const socket = io.connect(window.location.origin);
 	socket.on('data11', (data) => {
