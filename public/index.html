@@ -10,15 +10,15 @@
   <p id="status">OpenCV.js is loading...</p>
   <div class="outSide">
     <div class="outsides"><h3 style="font-size:2vw;"> OutSide</h3> </div>
-    <div class ="rml"> <img id="image11"></div> 
-    <div class ="rml"> <img id="image21"> </div>
-    <div class ="rml"> <img id="image12"></div>
+    <div class ="rml"> <img id="data11"></div> 
+    <div class ="rml"> <img id="data21"> </div>
+    <div class ="rml"> <img id="data12"></div>
   </div>
   <div class="inSide">
     <div class="insides"><h3 style="font-size:2vw;"> InSide</h3> </div>
-    <div class ="rml"> <img id="image13"> </div>
-    <div class ="rml"> <img id="image22"> </div>
-    <div class ="rml"> <img id="image14"> </div>
+    <div class ="rml"> <img id="data13"> </div>
+    <div class ="rml"> <img id="data22"> </div>
+    <div class ="rml"> <img id="data14"> </div>
   </div>
 
   <script src="/socket.io/socket.io.js"></script>
@@ -30,12 +30,12 @@
 	
 	socket.on('error', data => location.reload());
 	
-	['image11',
-	 'image12',
-	 'image13',
-	 'image14',
-	 'image21',
-	 'image22'
+	['data11',
+	 'data12',
+	 'data13',
+	 'data14',
+	 'data21',
+	 'data22'
 	].forEach(cam_code => {
 	    socket.on(cam_code, data => {
 		  const image_el = document.getElementById(cam_code);
