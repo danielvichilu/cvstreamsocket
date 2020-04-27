@@ -10,33 +10,20 @@ let port;
 const io = require('socket.io')(server);
 app.use(express.static(__dirname + '/public'));
 io.sockets.on('error', e => console.log(e));
-io.sockets.on('connection', function (socket) {
-  socket.on('image11',(image)=>{
-     io.emit('image11', image)
+io.sockets.on('connection', socket => {
+   ['image11',
+   'image12',
+   'image13',
+   'image14',
+   'image21',
+   'image22'
+  ].forEach( cam_code => {
+     //receive video capture from second raspberry
+      socket.on(cam_code, image => {
+        io.emit(cam_code, image)
+        heroku.emit(cam_code, image)
+      });
     });
-  
-     socket.on('image12',(image)=>{
-     io.emit('data12', image)
-  });
-  
-  socket.on('image13',(image)=>{
-    io.emit('data13', image)
-  
  });
-    socket.on('image14',(image)=>{
-    io.emit('data14', image)
-  
- });
-    socket.on('image21',(image)=>{
-    io.emit('data21', image)
-  
- });
-    socket.on('image22',(image)=>{
-    io.emit('data22', image)
-});
-socket.on('error1',(data)=>{
-  io.emit('errorr', data)
-});
-})
 server.listen(port, () => console.log(`http://localhost:${port}`+ '/mix.html',))
                           console.log(`http://localhost:${port}`+ '/index.html',);
