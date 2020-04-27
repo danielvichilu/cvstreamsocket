@@ -21,7 +21,6 @@ io.sockets.on('connection', socket => {
      //receive video capture from second raspberry
       socket.on(cam_code, image => {
         io.emit(cam_code, image)
-        heroku.emit(cam_code, image)
       });
     });
  });
