@@ -23,5 +23,4 @@ io.sockets.on('connection', socket => {
       });
     });
  });
-server.listen(port, () => console.log(`http://localhost:${port}`+ '/mix.html',))
-                          console.log(`http://localhost:${port}`+ '/index.html',);
+server.listen(port)                     
