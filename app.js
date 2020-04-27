@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-let broadcaster;
 let server;
 let port;
   const http = require('http');
@@ -8,7 +7,7 @@ let port;
   port = process.env.PORT || 3000;
 
 const io = require('socket.io')(server);
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/dist'));
 io.sockets.on('error', e => console.log(e));
 io.sockets.on('connection', socket => {
    ['image11',
