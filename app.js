@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'));
 io.sockets.on('error', e => console.log(e));
 io.sockets.on('connection', function (socket) {
   socket.on('image11',(image)=>{
-     io.emit('data11', image)
+     io.emit('image11', image)
     });
   
      socket.on('image12',(image)=>{
