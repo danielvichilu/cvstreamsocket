@@ -25,7 +25,7 @@
 	
 <script>
 	const socket = io.connect(window.location.origin);
-	socket.on('data11', (data) => {
+	socket.on('image11', (data) => {
 		const imageElm11=document.getElementById('image11');
 		imageElm11.src=`data:image/jpeg;base64,${data}`
 		});
